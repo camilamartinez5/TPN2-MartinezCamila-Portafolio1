@@ -1,0 +1,108 @@
+section{
+    padding: 4rem 0;
+}
+.section--dark{
+   background-color: #dfaef3;
+}
+.section--light{
+    background-color: rgba(255, 255, 255, 0.703);
+}
+.section__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 1rem;
+}
+.section__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: rgb(119, 15, 129);
+}
+.section__content{
+    display: flex;
+    align-items: center;
+    gap:  2rem;
+}
+.section__image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.section__text{
+    flex: 1;
+    font-size: 1.1rem;
+}
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card{
+    border: 1px solid #530965;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow;
+}
+.card:hover{
+    transform: translateY(-5x);
+    box-shadow: 0 5px 15px rgba(177, 40, 215, 0.452);
+}
+.card__image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card__content{
+    padding: 1.5rem;
+}
+.card__title{
+    margin: 0 0 0.5rem;
+    color: rgb(22, 45, 46);
+}
+.card__description{
+    margin: 0 0 1rem;
+    color: rgba(17, 34, 63, 0.901);
+}
+.card__link{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgb(224, 141, 241);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+.card__link:hover{
+    background-color: rgb(237, 154, 237);
+}
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill{
+    background-color: rgb(184, 114, 195);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(97, 10, 105);
+}
+.skill__title{
+    margin: 0 0 1rem;
+    color: rgb(71, 14, 86);
+    font-size: 1.3rem;
+}
+.skill__items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skill__item{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(228, 226, 224);
+}
+.skill__item:last-child{
+    border-bottom: none;
+}
